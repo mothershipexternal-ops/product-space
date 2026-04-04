@@ -655,7 +655,7 @@
       '<div class="empty-state">Loading…</div>';
 
     try {
-      const res = await fetch(`/api/file?path=${encodeURIComponent(filePath)}`);
+      const res = await fetch(`/${filePath}`);
       if (!res.ok) throw new Error(await res.text());
       const text = await res.text();
 
@@ -705,7 +705,7 @@
     const openFolders = preserveState ? getOpenFolders() : null;
     const activePath = preserveState ? getActivePath() : null;
 
-    const res = await fetch('/api/tree');
+    const res = await fetch('/tree.json');
     const tree = await res.json();
 
     const sidebar = document.getElementById('sidebar');
@@ -808,9 +808,6 @@
     await loadTree({ loadReadme: !hashFile });
     if (hashFile) await loadFileByPath(hashFile);
 
-    const es = new EventSource('/api/watch');
-    es.onmessage = () => loadTree({ preserveState: true });
-    es.onerror = () => { es.close(); };
   }
 
   init();
