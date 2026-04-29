@@ -5,7 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "node build.js"
+    "build": "node build.js",
+    "deploy": "vercel deploy --prod",
+    "deploy:preview": "vercel deploy",
+    "env:pull": "vercel env pull",
+    "logs": "vercel logs"
   },
   "dependencies": {
     "express": "^4.18.2"

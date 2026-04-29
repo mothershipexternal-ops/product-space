@@ -62,6 +62,10 @@ This repository contains the research, market analysis, and implementation strat
 **Goal:** Quantify the business opportunity and funding path.
 *   [`revenue-projections.md`](./05_Financial_Model/revenue-projections.md): 3-year revenue model with segment mix per year (Solo tracked separately; Core ARPU grows Y1 $122→Y3 $168 via mix shift). Total ARR: Y1 $146K / Y2 $1.52M / Y3 $7.49M.
 
+### [06_Business_Model](./06_Business_Model)
+**Goal:** Synthesize how value is created, how profit is captured, and the underlying logic of the business.
+*   [`business-model.md`](./06_Business_Model/business-model.md): Value creation model (customers, differentiation, value chain, GTM), profit model (revenue sources, cost structure, profitability drivers), and business logic/goal. Cross-cuts all research into a single synthesized view.
+
 ## Quick Start
 1.  Read [`operational-context.md`](./01_Problem_Space/operational-context.md) to understand the persona.
 2.  Read [`problem-research.md`](./01_Problem_Space/problem-research.md) to understand the "Three-Way Match" failure.
